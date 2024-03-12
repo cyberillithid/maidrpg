@@ -1,0 +1,36 @@
+
+{
+	"$ibid_maid_main_Attributes_title": "Атрибуты",
+	"$ibid_maid_misc_Favors_title": "Очки Доброй Воли",
+	"$ibid_maid_misc_Spirit_title": "Сила Духа",
+
+	"$ibid_maid_menu_title": "Мэйд РПГ",
+	"$ibid_maid_Format_title": "Результат и ссылки",
+	"$ibid_maid_main_curtitle": "`Чарник для ${setting}${char}`",
+	"$ibid_maid_menu_Locale_wrap_status": "Выбор сеттинга",
+	"$ibid_maid_Maid_title": "Мэйдочка",
+	"$ibid_maid_Butler_title": "Дворецкий",
+	"$ibid_maid_Master_title": "Мастер и Поместье",
+	"$ibid_maid_menu_Setting_status": "Выбор типа персонажа",
+	"$ibid_maid_main_Name_wrap_title": "Имя",
+	"$ibid_maid_main_Reroll_all_submit_label": "Новую!",
+	"$ibid_maid_main_Type_title": "Тип",
+	"$ibid_maid_main_Colors_title": "Цвета",
+	"$ibid_maid_main_SpecQual_title": "Особые качества",
+	"$ibid_maid_main_Roots_title": "Происхождение",
+	"$ibid_maid_main_Stress_title": "Нервный срыв",
+	"$ibid_maid_main_Superpower_title": "Особая сила",
+	"$ibid_maid_main_Weapon_title": "Оружие",
+	"$ibid_maid_misc_title": "Прочее",
+	"$ibid_maid_main_Ego_title": "Эго",
+	"$ibid_maid_main_MorphType_title": "Тип морфа",
+	"$ibid_maid_main_MorphQual_title": "Качества морфа",
+	"$ibid_maid_main_Morph_title": "Морф",
+	"$ibid_maid_main_setting_main": "аниме-",
+	"$ibid_maid_main_setting_ecli": "пост-",
+	"$ibid_maid_main_char_maid": "мэйдочки",
+	"$ibid_maid_main_char_butl": "дворецкого",
+	"$ibid_maid_main_char_mast": "мастера",
+
+	"$ibid_maid_common_reroll_submit_label": "Реролл"
+}

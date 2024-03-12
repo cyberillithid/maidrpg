@@ -1,0 +1,43 @@
+$ibid_maid_common_wrapper $mol_expander
+	lines /string \
+	dices /number 0
+	Tools <= diceshow $mol_view
+		sub <= dicebox /
+			<= Statdice* $ibid_maid_common_dice
+				diceval <= dice* 0
+			<= Reroll $ibid_maid_common_reroll
+				show_text false
+				reroll_key <= reroll_key / 0
+				rerolled? <=> rerolled?event null
+	content <= paragraphs /
+		<= Textbox* $mol_paragraph
+			title <= line* \
+
+$ibid_maid_common_reroll $mol_link
+	reroll_key null
+	show_text true
+	event_click?event <=> run?event null
+	rerolled?event null
+	arg *
+		reroll 1
+	attr *
+		^
+		hidden <= hidden false
+	sub /
+		<= Reroll_icon $mol_icon_dice_multiple
+		<= submit_label @ \Reroll
+
+$ibid_maid_common_section $mol_section
+	datum $ibid_maid_datum_section
+	Tools <= rerollbox $mol_view
+		sub /
+			<= Reroll $ibid_maid_common_reroll
+				reroll_key <= reroll_key / 0
+				rerolled?event <=> rerolled? null
+	content <= wrappers /
+		<= Wrapper* $ibid_maid_common_wrapper
+			lines <= lines* /
+			dices <= dices* / 0
+			title <= titled* \
+			reroll_key <= keys* / 0
+			rerolled?event <=> rerolled?

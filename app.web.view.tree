@@ -1,0 +1,125 @@
+$ibid_maid $mol_book2
+	datastore $ibid_maid_data_obj
+	pages /
+		<= Menu $ibid_maid_menu
+			store <= datastore
+		<= Page $ibid_maid_main
+			store <= datastore
+		<= Format $mol_page
+			title @ \Charsheet
+			body /
+				\href
+				\link
+
+$ibid_maid_menu $mol_page
+	title @ \Maid RPG
+	store $ibid_maid_data_obj
+	body /
+		<= Locale_wrap $ibid_maid_menu_localer
+			status @ \Setting
+		<= Setting $mol_card
+			content /
+				<= SettingsList $mol_list
+					rows <= settings / 
+						<= SettingLink* $mol_link
+							title <= settingname* \
+							arg <= settingarg* *
+			status @ \Character type
+		<= GenType $mol_card
+			content /
+				<= CharsList $mol_list
+					rows <= chartypes / 
+						<= ChartypeLink* $mol_link
+							title <= charname* \
+							arg <= chararg* *
+	foot /
+		<= FooterBar $mol_bar
+			sub / 
+				<= GitIcon $mol_link
+					uri \https://github.com/cyberillithid/maidrpg
+					sub /
+						<= Git_icon $mol_icon_github_circle
+
+$ibid_maid_menu_localer $mol_card
+	content /
+		<= Locale $mol_locale_select
+			dictionary *
+				ru \Russian
+				en \English
+
+
+
+$ibid_maid_main $mol_page
+	store $ibid_maid_data_obj
+		rerolled? => rerolled?
+		current_char => char
+	title <= titlegen \
+	tools <= toolgen /
+		<= Reroll_all $ibid_maid_common_reroll
+			reroll_key -1
+			submit_label @ \New
+			rerolled? <=> rerolled?event
+	body <= subsecs /
+		<= Attributes $mol_section
+			level 2
+			title @ \Attributes
+			content /
+				<= Stats $ibid_maid_attrs
+					char <= char
+		<= Misc $ibid_maid_misc
+			char <= char
+		<= Section* $ibid_maid_common_section
+			level <= level* 3
+			title <= titles* \Step
+			rerolled? <=> rerolled?
+			datum <= datum* $ibid_maid_datum_section
+
+$ibid_maid_misc $mol_section
+	char $ibid_maid_data_character
+	level 3
+	title @ \Misc
+	content /
+		<= MiscBody $mol_bar
+			sub <= MiscGen /
+				<= Favors $mol_labeler
+					title @ \Favors
+					content / 
+						<= FavorL $mol_paragraph
+							title <= start_favors \0
+				<= Spirit $mol_labeler
+					title @ \Spirit
+					content / 
+						<= SpiritL $mol_paragraph
+							title <= start_spirit \0
+				<= SelMaxVal* $mol_link
+					title <= selmaxtitle* \selmax
+					arg *
+						selmax <= selmaxval* 0
+
+$ibid_maid_attrs $mol_bar
+	char $ibid_maid_data_character
+	sub <= stats /
+		<= Stat*0 $ibid_maid_stat
+			statix <= key* 0
+			dices <= dices* /number
+			mod <= mod* 0
+			value <= raw* 0
+			result <= modded* 0
+
+$ibid_maid_stat $mol_labeler
+	dices /number
+	statix 0
+	value NaN
+	mod NaN
+	result NaN
+	content /
+		<= Stat_list $mol_list
+			rows /
+				<= Stat_mod $mol_paragraph
+					title <= stat \0
+				<= stat_dices $mol_paragraph
+					sub / 
+						<= Statdice $ibid_maid_common_dice
+							diceval <= dice*0 1
+						<= Statdice2 $ibid_maid_common_dice
+							diceval <= dice*1 1

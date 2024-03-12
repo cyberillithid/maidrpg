@@ -1,0 +1,4 @@
+$ibid_maid_common_dice $mol_view
+	diceval NaN
+	sub / 
+		<= Icon? $mol_icon

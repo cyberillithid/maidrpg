@@ -1,0 +1,5 @@
+$ibid_maid_common_link $mol_link
+	hidden false
+	attr *
+		^
+		hidden <= hidden

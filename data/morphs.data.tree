@@ -1,0 +1,307 @@
+11 \Baseline
+	Cost 10
+	Requirements None
+	Restrictions None
+	Benefits /
+		Customisable \ Baseline Morphs are easily customised. You receive two Morph Qualities rather than one. You can choose the first one; roll for the second one as usual.
+	Notes \ A standard human(oid) body.
+12 \Cephalopoid
+	Cost 10
+	Requirements None
+	Restrictions None
+	Benefits /
+		Spineless \You don't have any bones; this can let you slip into places other maids can't (and often shouldn't) go, and gives you +1 to the die roll for Athletics- and Skill-based actions where your extreme flexibility would help.
+		Tentacular \Your eight arms let you perform multiple tasks in tandem. You receive the maid weapon “Tentacles!” if you don't already have it.
+	Notes \A Morph based on the octopuses of Old Earth. Anti-gravity organs let you “swim” in air as well as water.
+13 \Chibimorph
+	Cost 10 
+		(5 if Maid Types include Lolita)
+	Requirements None
+	Restrictions None
+	Benefits /
+		Disturbingly Cute \Add +1 to the die roll for Affection-based actions.
+		I'm Not Touching You \You can never lose Favour for engaging in combat with other maids – even if you started it!
+	Notes \A biological Morph whose growth and maturation has been deliberately arrested in early childhood.
+14 \Giant Flying Space Whale
+	Cost 15
+	Requirements None
+	Restrictions /
+		\You suffer -1 to the die roll for Skill-based actions when dealing with normal-sized tasks. Also, this Morph always has the “Adaptation (Vacuum)” Morph Quality. If you roll the same Morph Quality again, reroll.
+		.morph_quality =51_6
+	Benefits /
+		Large and In Charge \In actual physical combat, you automatically win if your opponent's result was less than 10.
+	Notes \This bioengineered Morph based on Old Earth whales uses its gravity-nullifying organs to swim through the air, and can even swim in space thanks to its resilient physiology and vacuum-sealed hide.
+15 \Digimorph
+	Cost 5
+	Requirements \None
+	Restrictions \You can't perform physical actions unless another character serves as your hands. This includes the “Psionic” Ego Quality – no setting things on fire with your brain when you're sleeved into a Digimorph!
+	Benefits /
+		Ain't Got No Body \You can't be attacked in actual 	physical combat – you've got no body to attack!
+		Programmable \You don't roll for a Morph Quality when you sleeve into this Morph. Instead, choose an extra Ego Quality. This Ego Quality goes away the next time you resleeve.
+		.ego_quality +1roll
+	Notes \You've been translated into a purely digital intelligence. You can talk to other characters via holographic projection, but you can't interact with the physical world.
+16 \Hive Morph
+	Cost 15
+	Requirements /
+		Skill .geq 3
+	Restrictions \You can still use Athletics to move yourself about, but you can't manipulate any object that weighs more than a few pounds.
+	Benefits /
+		Eyes Everywhere \Your swarm's components get into everything, allowing you to witness any event in the mansion, even if an Ego or Morph Power would normally prevent it.
+		Squashing Bugs \Attacks in actual physical combat inflict a maximum of 1 Stress on you unless they're able to hit a wide area.
+	Notes \This Morph is a swarm of small creatures – like rodents or insects – with no central intelligence. You need to gather your components together to take actions, but you can spread them out to watch everything.
+21 \Valkyrie
+	Cost 15
+	Requirements /
+		Athletics .geq 2
+	Restrictions /
+		\ You gain the Ego Quality “Hyper-Aggressive” as long as you're sleeved into this Morph.
+	Benefits /
+		Combat Wombat \You gain +1 to the die roll for all actions in actual physical combat.
+		Wolf Pack Tactics \Any maid or Master fighting alongside you also adds +1 to the die roll in actual physical combat.
+	Notes \A biological Morph specially engineered for combat. Oddly, no male version has ever been produced.
+22 \Pleasure Model
+	Cost 10 
+		(5 if Maid Types include Sexy)
+	Requirements None
+	Restrictions \You can't make Skill tests to perform practical activities.
+	Benefits /
+		Dead Sexy \You can spend Favour on Seduction rolls.
+		Fully Functional \Add +1 to rolls to remove Stress via Romantic Activities.
+	Notes \A specially designed pleasure Morph from the height of Old Earth's decadent transhuman empire. Why does the Master even have this Morph?
+23 \Clank
+	Cost 5 
+		(0 if your current Favour is less  10)
+	Requirements None
+	Restrictions \You suffer -1 to the die roll for all Affection-based actions.
+	Benefits /
+		Unfeeling Machine \You reduce Stress from all sources by 1 point.
+	Notes \A bare-bones robotic Morph; it resembles a metallic marionette with a blank, expressionless face. Did you do something bad for the Master to put you in such a body?
+24 \Spideroid
+	Cost 15
+	Requirements None
+	Restrictions \You gain the Ego Quality “Terminally Curious” as long as you're sleeved into this Morph.
+	Benefits /
+		Filled With Useful Devices \When you spend Favour to add a bonus to your die roll, it takes the form of a deployed gadget that sticks around for five minutes, granting a +1 bonus to all rolls for exactly the same kind of action. You have to pay the Favour again to deploy the same device later on.
+	Notes \This Morph resembles an armoured crab or spider the size of a small car. They're designed for combat and reconnaissance, but a hardware glitch causes Egos sleeved into them to become curious and philosophical.
+25 \Utopian
+	Cost 18 
+		(12 if Maid Types include Heroic)
+	Requirements /
+		Will .geq 3
+	Restrictions None
+	Benefits /
+		Big Damn Hero \You gain a +1 to the die roll for any action if you toss off a snappy heroic one-liner first.
+	Notes \An engineered biological Morph of heroic and idealised proportions, popular among transhumans during the latter days of Old Earth.
+26 \R-9000
+	Cost: 15 
+		(10 if Maid Types include Cool)
+	Requirements None
+	Restrictions \You gain the Ego Quality “Taciturn” as long as you're sleeved into this Morph.
+	Benefits /
+		Liquid Metal Dynamics \Take 1D6 Stress to produce any non-projectile maid weapon.
+		Flowing Body / 
+			\You gain the “Super Evasion” Ego Power if you don't already have it.
+			.super +=1_1
+	Notes \A Morph comprised of liquid “smart metal” that can take any shape at will. Egos sleeved into this Morph usually don't talk much.
+31 \Microbot
+	Cost 5
+	Requirements None
+	Restrictions /
+		\This Morph always has the “Vulnerability (Remote Control)” Morph Quality. If you roll the same Morph Quality again, reroll.
+		.morph_quality =63_1
+	Benefits /
+		Inoffensive \Nobody can bring themselves to attack you in actual physical combat, and they feel ashamed for even considering it. They can still hit back if you attack them first, though!
+		Inconspicuous \You can just show up anywhere in the mansion you want, even if there's no obvious way for you to have gotten there. This doesn't allow you to ignore effects like World For Two.
+	Notes \A small robot about eight inches tall, equipped with a large radio control antenna (complete with flag). Why does a children's toy have a powerful enough processor to load an Ego?
+32 \Braincase
+	Cost 12
+	Requirements None
+	Restrictions \You're immobile unless carried.
+	Benefits /
+		Brainiac \If your Cunning is less than 3, treat it is 3 for as long as you're sleeved into this Morph.
+		Just As Planned \Whenever anyone (including you) rolls for a Normal or Random Event, they have to roll twice and let you pick which result actually 	happens.
+	Notes \A brain in a jar; you communicate using a built-in video screen with a picture of your face on it. While sleeved into this Morph, your intellect is vastly expanded, but you're easily tipped over.
+33 \Heavy Loader
+	Cost 10
+	Requirements None
+	Restrictions \If you roll a 1 on the die when attempting a Skill-based action, you break whatever you were working on (or knock down part of the mansion if there's nothing to break).
+	Benefits /
+		Handy /
+			\You gain the maid weapon “Enormous Robotic Hands”.
+			.weapon += ?
+		Hydraulic Limbs \ Add +2 to the die roll for Athletics-based actions that rely on raw strength.
+	Notes \ A hulking robotic Morph normally used to handle cargo and move exceptionally heavy furniture.
+34 \Idol
+	Cost 10
+	Requirements None
+	Restrictions \You can't make Skill tests to perform practical activities.
+	Benefits /
+		Photogenic \You can resist physical attacks with Affection.
+		Spotlight \Any attack that doesn't include you as a target takes -1 to the die roll.
+	Notes \A Morph used on old Earth by pop idols, media personalities, and narcissists. Its sanitised metabolism is immune to bad breath and body odour, and it never has bad hair days.
+35 \Evolved
+	Cost: 15
+	Requirements: None
+	Restrictions: None
+	Benefits:
+		Optimised: When you sleeve into this Morph, pick an Attribute. You gain +1 to that Attribute until you resleeve.
+	Big Eyes, Small Mouth: Increase the results of any roll to gain or lose Favour by 1 point.
+	Notes: This Morph is the culmination of experiments in induced human evolution. It features large, shining eyes, a small, nearly nonexistent nose, and unnaturally smooth skin – it's actually kind of uncanny.
+36 \Esper
+	Cost: 12
+	Requirements: None
+	Restrictions: Your Stress Explosion becomes “Rampant Megalomania” as long as you're sleeved into this Morph.
+	Benefits:
+		Latent Potential: Roll on the “Psionic” Ego Quality table when you sleeve into this Morph. You have that Quality until you resleeve. If you roll a Quality you already have, reroll until you get a new one.
+		Power Overwhelming: Add +1 to the die roll whenever you use a Psionic Quality.
+	Notes: Possessed of a bald head, pale skin, and unsettlingly vibrant eyes, this Morph is designed to unlock the psychic potential of any Ego that's sleeved into it. Unfortunately, this has certain emotional side effects.
+41 \Wraith
+	Cost: 10
+	Requirements: None
+	Restrictions: Whenever you hear a certain key phrase (determined secretly by the GM), you suffer the Stress Explosion “Murder Spasm”, regardless of your current Stress total.
+	Benefits:
+		Stealthy: When you don't wish to be seen, others need a result of 10+ to detect you.
+		Use of Weapons: Add +1 to the die roll when using any weapon.
+	Notes: This slender, adolescent-looking Morph was designed during the Transhuman Wars to be the perfect assassination vehicle. They were often sleeved with Egos that had no idea of their true purpose, allowing them to serve as sleeper agents.
+42 \Pixie
+	Cost: 8 (5 if Maid Types include Lolita)
+	Requirements: None
+	Restrictions: You suffer -1 to the die roll for Athletics-based actions when dealing with normal-sized tasks.
+	Benefits:
+		Travel-Sized: Add +1 to the die roll for Athletics- and Skill-based actions where your tiny size could help.
+		Improbability Engine: When you choose to engage this feature, rolls of 4-6 always count as six – but rolls of 1-3 always count as 1.
+	Notes: These small, winged Morphs are equipped with probability-manipulation devices intended to make them very lucky; however, sometimes it has the opposite effect.
+43 \Hominid
+	Cost: 10
+	Requirements: None
+	Restrictions: Your Cunning is treated as zero as long as you're sleeved into this Morph.
+	Benefits: 
+		Brute Strength: If your Athletics is less than 3, treat it as 3 for as long as you're sleeved into this Morph.
+		Thick as a Brick: You're immune to Cunning-based attacks – you just can't follow them!
+	Notes: The result of an experiment in retrograde evolution, this Morph resembles humanity's hominid ancestors. While it has its benefits, its brain is limited.
+44 \Nekomorph
+	Cost: 15
+	Requirements: None
+	Restrictions: Your Stress Explosion becomes “Spoiled Child” as long as you're sleeved into this Morph.
+	Benefits:
+		Catness: Halve the Stress you suffer from any attack that would physically injure or publicly humiliate you.
+		Indulgence: You can never lose Favour through your own actions unless they resulted in direct harm to the Master.
+	Notes: A curious blend of human and feline features, these Morphs are unaccountably popular as “pets” among many Masters. For the purpose of rolling Morph Qualities, this Morph is considered the same as an uplifted cat.
+45 \Spectator
+	Cost: 10
+	Requirements: None
+	Restrictions: None
+	Benefits:
+		Panopticon: You're never surprised by attacks – you always get to divide the incoming Stress by your Attribute, even if an Ego Power, Morph benefit, or item says otherwise.
+		Evil Eye: You gain “Eye Lasers” as a maid weapon.
+	Notes: A hovering metallic sphere with numerous camera-eyes mounted on prehensile robotic stalks. It's equipped with eye lasers for self-defence.
+46 \Nanoswarm
+	Cost: 25
+	Requirements: Skill 3 or higher
+	Restrictions: None
+	Benefits:
+		Grey Goo Scenario: When you attack in actual physical combat, you can perform an insidious attack that hits everyone in the scene, friend and foe, with a +1 bonus to the die roll.
+		Resistance is Futile: Anyone you defeat in actual physical combat (other than a Master) has their Stress Explosion changed to “Assimilated”. In this state, they must try to infect others with your nanoparticles whenever possible. Maids recover from this Stress Explosion normally, but ordinary people are your slaves forever!
+	Notes: This Morph is a cloud of “smart” nanoparticles with a distributed, networked Ego loaded into it. These nanoparticles can consume matter to make more of themselves, and even infect other Morphs.
+51 \Tengu
+	Cost: 10
+	Requirements: None
+	Restrictions: You gain the Ego Quality “Mischievous” as long as you're sleeved into this Morph.
+	Benefits:
+		Prankster: If someone submits to you in combat to avoid taking Stress, you can force them to actually fight. You must role-play how you trick or goad them into a confrontation.
+		Fly Away: You gain the “Escape” Ego Power if you don't already have it.
+	Notes: A winged human/bird hybrid, popular for exploration. Its natural facility for avoiding trouble sometimes goes to its users' heads. For the purpose of rolling Morph Qualities, this Morph is considered the same as an uplifted raven.
+52 \Mutant
+	Cost: 15
+	Requirements: None
+	Restrictions: This Morph always has the “Infamous” Morph Quality. If you roll the same Morph Quality again, reroll.
+	Benefits:
+		Power Surge: Spend 1D6 Favour to directly inflict 1D6 Stress to someone – they don't get to resist. You can spend up to 3D6 Favour at once.
+		Unnatural Recovery: Spend 1D6 Favor to reduce the Stress from an incoming attack by 2D6. You can choose to use this Benefit after you see the results of combat.
+	Notes: An apparently human Morph, genetic experimentation has endowed it with bizarre abilities. Users of these Morphs are mistrusted due to their use as hidden terror weapons during the Transhuman Wars. All Morphs of this type are required to wear a shirt with a yellow stripe.
+53 \Uplifted Animal
+	Cost: 12
+	Requirements: None
+	Restrictions: You gain the Ego Quality “Animal Instincts” as long as you're sleeved into this Morph. You should roleplay your animalistic tendencies whenever possible.
+	Benefits:
+		Animal Traits: Your animal traits give you +1 to the die roll for certain actions based on what kind of animal you are:
+			1 Cat +1 to Luck-based actions
+			2 Dog +1 to Athletics-based actions
+			3 Monkey +1 to Skill-based actions
+			4 Rabbit +1 to Affection-based actions
+			5 Raven +1 to Cunning-based actions
+			6 Snake +1 to Will-based actions
+	Notes: A normal-looking Old Earth animal enhanced to house a human-level intelligence. This is actually a group of six different Morphs. Roll another die to determine what kind of uplifted animal your Morph is.
+54 \Guardian
+	Cost: 10
+	Requirements: None
+	Restrictions: None
+	Benefits:
+		Interpose: You can take the Stress that would have been applied to any other character you can see. If an item, Ego Power, or Morph benefit attaches any special effects to the attack that inflicted the Stress, you take those, too. This doesn't just apply to actual physical combat!
+	Notes: A powerfully built Morph equipped with enhanced reflexes, threat-analysis software, force field generators, and other protective upgrades, it can shield the Master (or anyone else) from anything from a gunshot to a cruel remark.
+55 \Medimorph
+	Cost: 15
+	Requirements: None
+	Restrictions: You gain the Ego Quality “Doctor” as long as you're sleeved into this Morph.
+	Benefits:
+		Tender Loving Care: By taking 1D6 Stress, you can remove 6 points of Stress from someone else.
+		Prescribe: You can use special drugs to give another character a +1 bonus to one Attribute for five minutes. When it wears off, they take 2D6 Stress. You need to win combat against someone to use this benefit if they're unwilling to accept it.
+	Notes: Though superficially human, this multi-armed Morph has built-in drug dispensers, and can deploy all manner of probes and syringes (and restraints...) at a moment's notice.
+56 \Gelloid
+	Cost: 10
+	Requirements: None
+	Restrictions: None
+	Benefits:
+		Viscosity: Any attack on you with an item or weapon causes your attacker to lose the weapon, regardless of whether the attack succeeds or fails.
+		Absorption: When you defeat an NPC, you can absorb them and recover Stress equal to the sum of their Attributes. It's kind of gross.
+	Notes: A jelly-like blob of translucent smart material with no particular form. You can shape it into a humanoid body and even wear clothes, but it'll still be monochromatic and semi-transparent.
+61 \Model 01
+	Cost: 20
+	Requirements: None
+	Restrictions: You can't perform physical (i.e., Athletics- or Skill-based) actions on a normal scale. Any attempt to do so automatically triggers your “Catastrophe” Morph benefit (see below). Also, while you are sleeved into this Morph, your Stress Explosion becomes “Succumb to Unfathomable Bloodlust”.
+	Benefits:
+		Outside Context Problem: Normal-sized characters can't engage you in actual physical combat. Unless they have artillery-scale weapons or massive vehicles, you just ignore them completely. On the flip side, you can't initiate actual physical combat with normal-sized characters, either.
+		Catastrophe: By taking 2D6 Stress (0 during a Stress Explosion), you can completely devastate the surrounding landscape. Normal-sized characters must defend themselves (usually with Luck or Athletics) with a result of 8 or better to avoid being swept away. This may incur Favour loss if you manage to hit the Master...
+	Notes: Though it appears to be a gigantic robot, this Morph is actually a lobotimised clone of a strange being that crash-landed on Earth many years ago, dressed in armour plates to conceal its nature. Though it has no will of its own, some of its instincts remain...
+62 \Security Unit
+	Cost: 10
+	Requirements: None
+	Restrictions: You must immediately investigate any and all suspicious activity, even from other maids; attempting to play favourites will incur Favour loss!
+	Benefits:
+		Terror Alert: By taking 1D6 Stress, you can initiate a lockdown. This works like “World For Two” in reverse: for five minutes, nobody – not even the Master – can leave the current scene!
+		Detention: When you defeat an NPC, their Stress Explosion becomes “Detained”. Detained characters can be subjected to enhanced interrogation at any time.
+		Don't Tase Me, Bro: You gain “Taser” as a maid weapon.
+	Notes: A sinister-looking security cyborg. Not even the Master is above suspicion! 
+63 \Duplicant
+	Cost: 10
+	Requirements: None
+	Restrictions: Your Stress Explosion becomes “Death” as long as you're sleeved into this Morph, after which you must wait five minutes before resleeving. Also, your current Stress can't be reduced by any means.
+	Benefits:
+		Bright But Brief: Add +1 to the die roll for all actions not based on Affection or Luck.
+		Like Tears in Rain: When you die, you can deliver a heartfelt soliloquy. This works like the “Maiden's Tears” Ego Power at no cost.
+	Notes: This organic Morph is completely superior to a normal human body, but its lifespan is brief.
+64 \Exterminator
+	Cost: 15 (10 if Maid Types include Cool)
+	Requirements: None
+	Restrictions: You gain the Ego Quality “Merciless Killer” as long as you're sleeved into this Morph.
+	Benefits:
+		BFG: Add +1 to the die roll for attacks with firearms.
+		Relentless: You only take Stress from actual physical combat. You can still be trapped, fooled, forced into certain actions, etc. in other types of combat, but you don't suffer any Stress from defeat.
+	Notes: This Morph's only purpose us murder, and it's very, very good at it.
+65 \Ophidian
+	Cost: 10
+	Requirements: None
+	Restrictions: None
+	Benefits:
+		Constrict: You gain the “Instant Restraint” Ego Power if you don't already have it. This also grants “Coils” as a maid weapon.
+		Shining Scales: You never suffer Stress from non-combat sources (e.g., failing a roll against a difficulty number). You take Stress in combat normally.
+	Notes: Humanoid from the waist up and a great robotic snake from the waist down, this Morph is favoured by those who need a bit of muscle and resilience without sacrificing human dexterity.
+66 \Subject R661-J
+	Cost: 17
+	Requirements: None
+	Restrictions: Your Stress Explosion becomes “Madness” as long as you're sleeved into this Morph. Also, your Affection score is treated as zero – in fact, you can't communicate with normal characters in any way, though you can understand them just fine.
+	Benefits:
+		Impossible Angles: Opponents have a -1 penalty to the die roll when attacking you.
+		Visions of Madness: When you attack another character using Cunning or Will, they don't get to divide the Stress by their Attribute.
+		Bad Touch: Your victims cannot comprehend the true form of your attack. (This counts as a maid weapon.)
+	Notes: To biological eyes, Subject R661-J appears to be a shifting collection of silvery spheres averaging one metre in diameter. To technological sensors, it doesn't show up at all – cameras see only static until they look away. In actuality, it is a synthetic twelve-dimensional life-form that can be imprinted with a human mind-state. Deleterious psychological effects upon the imprinted Ego are considered within acceptable limits.
